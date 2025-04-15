@@ -1,0 +1,73 @@
+baseURL: https://https://danctrl.github.io/danctrl.dev/
+languageCode: en-us
+title: danctrl
+theme: PaperMod
+
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: false
+
+enableRobotsTXT: true
+buildDrafts: true
+buildFuture: false
+buildExpired: false
+pluralizeListTitles: false
+
+#googleAnalytics: UA-123456789-1Ich nutze ei
+
+minify:
+  disableXML: true
+  minifyOutput: true
+
+params:
+
+  disableThemeToggle: true
+
+  assets:
+    favicon: "favicon.ico"
+    favicon16x16: "favicon-16x16.png"
+    favicon32x32: "favicon-32x32.png"
+    apple_touch_icon: "apple-touch-icon.png"
+    safari_pinned_tab: "safari-pinned-tab.svg"
+
+  label:
+    text: "danctrl"
+  #  icon: /apple-touch-icon.png
+  #  iconHeight: 35
+
+  # profile-mode
+  profileMode:
+    enabled: true
+    title: Hi, I'm Daniel. 
+    subtitle: ""
+    imageUrl: "images/avatar.png"
+    imageWidth: 250 
+    imageHeight: 250
+    imageTitle: "That's my avatar!"
+    buttons:
+      - name: Resume
+        url: cv.pdf
+
+  socialIcons:
+    - name: email
+      url: /contact/
+    - name: linkedin
+      url: "https://www.linkedin.com/in/danielguntermann/"
+    - name: github
+      url: "https://github.com/danctrl"
+    - name: instagram
+      url: "https://www.instagram.com/danielguntagram/"
+
+menu:
+  main:
+    - identifier: about
+      name: about
+      url: /about/
+      weight: 10
+#    - identifier: blog
+#      name: blog
+#      url: /posts/
+#      weight: 20
+
+caches:
+  images:
+    dir: :cacheDir/images

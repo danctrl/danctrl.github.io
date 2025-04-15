@@ -1,0 +1,25 @@
+<!-- layouts/partials/vantajs.html -->
+
+<!-- Load local Three.js -->
+<script src="{{ "js/three.r134.min.js" | absURL }}"></script>
+
+<!-- Load local VANTA.NET -->
+<script src="{{ "js/vanta.net.min.js" | absURL }}"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    VANTA.NET({
+      el: "#vanta-bg",          // The container element ID
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.0,
+      minWidth: 200.0,
+      scale: 1.0,
+      scaleMobile: 1.0,
+      backgroundColor: 0x1d1e20,
+    });
+  });
+</script>
+
+   

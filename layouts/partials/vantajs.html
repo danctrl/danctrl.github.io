@@ -1,0 +1,24 @@
+<script src="{{ "js/p5.min.js" | absURL }}"></script>
+<script src="{{ "js/vanta.topology.min.js" | absURL }}"></script>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    // Check if the body is dark at load
+    const isDark = document.body.classList.contains("dark");
+    const initialColor = isDark ? 0x1d1e20 : 0xffffff;
+
+    // Create a global vantaEffect so other scripts can access it
+    window.vantaEffect = VANTA.TOPOLOGY({
+      el: "#vanta-bg",
+      mouseControls: true,
+      touchControls: true,
+      gyroControls: false,
+      minHeight: 200.00,
+      minWidth: 200.00,
+      scale: 1.00,
+      scaleMobile: 1.00,
+      color: 0xdc3522,
+      backgroundColor: 0x1d1e20
+    });
+  });
+</script>
